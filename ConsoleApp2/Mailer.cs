@@ -10,15 +10,16 @@ namespace Mailer
 
 		public Mailer()
 		{
-			this.mes = new MailMessage("From@gmail.com", "to@gmail.com");
+			this.mes = new MailMessage("From@gmail.com", "toooo@gmail.com");
 			this.client = new SmtpClient();
 			client.Port = 587;
 			client.DeliveryMethod = SmtpDeliveryMethod.Network;
 			client.UseDefaultCredentials = false;
 			client.EnableSsl = true;
+
 			client.Credentials = new System.Net.NetworkCredential("example@gmail.com", "password");
 			client.Host = "smtp.gmail.com";
-			mes.Subject = "Test Subject";
+			mes.Subject = "Test Subjecthhh";
 
 
 
